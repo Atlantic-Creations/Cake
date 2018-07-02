@@ -1,10 +1,10 @@
 # Cake
 Probably the first Discord bot all about cake. Cake images, facts and more!
 
-##Bugs
+## Bugs
 Report as an issue on this repository
 
-##Command Suggestions
+## Command Suggestions
 Join the support server via the Invite command with `cake invite` or click [here](https://discord.gg/JMNzKyf)
 
 # Cool Widget
