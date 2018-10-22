@@ -1,0 +1,29 @@
+{
+  "name": "cake",
+  "version": "2.0.0",
+  "description": "The first Discord bot all about cake. Cake images, cake facts, cake and cake!",
+  "main": "cake.js",
+  "scripts": {
+    "test": "node ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Atlantic-Creations/Cake/tree/rewrite"
+  },
+  "keywords": [
+    "cake",
+    "discord-bot",
+    "discord.js",
+    "discord-js",
+    "javascript",
+    "discord",
+    "bot",
+    "cakebot"
+  ],
+  "author": "Atlantic Creations",
+  "license": "MIT",
+  "dependencies": {
+    "cat-loggr": "^1.0.10",
+    "eris": "^0.9.0"
+  }
+}
