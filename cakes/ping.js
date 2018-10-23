@@ -1,21 +1,23 @@
 exports.run = function(cake, msg) {
-    msg.channel.send({embed: {
-        color: 0,
+    const start = Date.now()
+    msg.channel.createMessage({embed: {
+        color: 0xFE0060,
         description: "Baking a cake..."
     }})
     .then(m => {
+        const end = Date.now()
         m.edit({embed: {
-            color: 0,
-            description: `:cake: It took me \`${m.createdTimestamp - msg.createdTimestamp}ms\` to bake a cake\n` +
-                         `It also took Discord \`${cake.ping.toFixed(0)}ms\` to bake their own cake.`
+            color: 0xFE0060,
+            description: `🍰 It took me \`${end - start}ms\` to bake a cake\n` +
+                         `📡 It also took Discord \`${cake.shards.get(0).latency}ms\` to bake their own cake.`
         }})
     })
 }
 
-exports.conf = {
+exports.settings = {
     aliases: []
 }
-exports.help = {
+exports.info = {
     name: "ping",
     description: "See how long it takes me to bake a cake!",
     usage: "ping"
