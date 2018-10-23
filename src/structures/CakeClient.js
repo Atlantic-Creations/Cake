@@ -19,7 +19,7 @@ class CakeClient extends Eris {
                 return;
               }
               cmds.forEach(f => {
-                let props = require(`../../commands/${f}`)
+                let props = require(`../../cake/${f}`)
                 if(props.settings.disabled) {
                   loggr.info(`${f.slice(0, -3)} has been disabled, reason: ${props.settings.disabled.reason}`)
                   props.file = f
