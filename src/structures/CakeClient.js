@@ -12,7 +12,7 @@ class CakeClient extends Eris {
         this.aliases = new Map()
 
         this.loadCommands = function() {
-          fs.readdir("./commands/", (err, files) => {
+          fs.readdir("./cakes/", (err, files) => {
               let cmds = files.filter(f => f.split(".").pop() === "js")
               if(cmds.length === 0) {
                 loggr.info("There are no commands for me to load!")
